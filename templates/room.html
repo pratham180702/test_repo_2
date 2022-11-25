@@ -1,0 +1,36 @@
+{% extends 'main.html' %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room site</title>
+    <style>
+      body {
+        background-color: white;
+      }
+      .nav {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <header>
+        <ul>
+          {% if roo %} {{roo.name}} {% else %}
+          <div>Error 404</div>
+          {% endif %}
+        </ul>
+      </header>
+      <div></div>
+      <a
+        href="
+     "
+      ></a>
+    </nav>
+  </body>
+</html>
+{% endblock content %}
